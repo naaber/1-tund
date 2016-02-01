@@ -2,6 +2,23 @@ window.onload = function(){
 
   var clock = document.getElementById("clock");
 
+  clock.addEventListener('click', function(){
+
+    console.log("click");
+
+  });
+
+  window.addEventListener('keypress', function(){
+
+    console.log(event);
+
+    if(event.charCode == 13){
+
+      alert('enter');
+    }
+
+  });
+
   writeDate();
 
   window.setInterval(function(){
